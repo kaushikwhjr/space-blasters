@@ -33,7 +33,7 @@ function setup() {
   life3.addImage(playerImg)
   life3.scale=0.1
 
-  bigEnemy=createSprite(50,-100,10,10)
+  bigEnemy=createSprite(-100,-100,10,10)
   bigEnemy.addImage(bigEnemyImg)
   bigEnemy.scale=0.5
 
@@ -86,7 +86,7 @@ function draw() {
     createEnemies()
     gun()
   }
- if(kills>2){
+ if(kills>20){
   bigEnemy.velocityY=1.2
   
   if(frameCount%20===0){
